@@ -422,39 +422,39 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Navigation */}
-      <nav className="fixed w-full z-50 transition-all duration-300">
+      <nav className={`fixed w-full z-50 transition-all duration-300`}>
         {/* Top Bar */}
-        <div className="bg-black/95 text-white border-b border-white/10">
+        <div className="bg-black/90 text-white">
           <div className="container mx-auto py-2 px-4">
             <div className="flex justify-between items-center">
               <div className="flex items-center space-x-6">
                 <a href="tel:+94762810000" className="text-sm hover:text-[#F8D43A] transition-colors flex items-center gap-2 group">
-                  <div className="p-1.5 rounded-full bg-[#F8D43A]/10 group-hover:bg-[#F8D43A]/20 transition-all">
+                  <div className="p-1.5 rounded-full bg-[#F8D43A]/5 group-hover:bg-[#F8D43A]/10 transition-all">
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
                   </div>
-                  <span className="hidden md:inline">Call Us:</span> +94 76 281 0000
+                  <span className="hidden md:inline font-light">+94 76 281 0000</span>
                 </a>
                 <a href="mailto:info@rajinihotels.com" className="text-sm hover:text-[#F8D43A] transition-colors flex items-center gap-2 group">
-                  <div className="p-1.5 rounded-full bg-[#F8D43A]/10 group-hover:bg-[#F8D43A]/20 transition-all">
+                  <div className="p-1.5 rounded-full bg-[#F8D43A]/5 group-hover:bg-[#F8D43A]/10 transition-all">
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
                   </div>
-                  <span className="hidden md:inline">Email:</span> info@rajinihotels.com
+                  <span className="hidden md:inline font-light">info@rajinihotels.com</span>
                 </a>
               </div>
-              <div className="flex items-center space-x-4">
+              <div className="flex items-center space-x-6">
                 <div className="flex space-x-4">
                   <a href="#" className="hover:text-[#F8D43A] transition-all duration-300 transform hover:scale-110 group">
-                    <div className="p-1.5 rounded-full bg-[#F8D43A]/10 group-hover:bg-[#F8D43A]/20 transition-all">
+                    <div className="p-1.5 rounded-full bg-[#F8D43A]/5 group-hover:bg-[#F8D43A]/10 transition-all">
                       <span className="sr-only">Facebook</span>
                       <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
                     </div>
                   </a>
                   <a href="#" className="hover:text-[#F8D43A] transition-all duration-300 transform hover:scale-110 group">
-                    <div className="p-1.5 rounded-full bg-[#F8D43A]/10 group-hover:bg-[#F8D43A]/20 transition-all">
+                    <div className="p-1.5 rounded-full bg-[#F8D43A]/5 group-hover:bg-[#F8D43A]/10 transition-all">
                       <span className="sr-only">Instagram</span>
                       <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
                     </div>
@@ -466,7 +466,7 @@ export default function Home() {
         </div>
 
         {/* Main Navigation */}
-        <div className="bg-gradient-to-b from-black/95 to-black/85 backdrop-blur-md border-b border-white/10">
+        <div className="bg-gradient-to-b from-black/90 via-black/85 to-transparent backdrop-blur-md">
           <div className="container mx-auto py-4 px-4">
             <div className="flex justify-between items-center">
               <div className="w-48">
@@ -481,17 +481,17 @@ export default function Home() {
               </div>
               
               {/* Desktop Menu */}
-              <div className="hidden lg:flex items-center space-x-8">
+              <div className="hidden lg:flex items-center space-x-10">
                 <a 
                   href="#about" 
                   onClick={(e) => {
                     e.preventDefault();
                     scrollToSection('about');
                   }}
-                  className="text-white hover:text-[#F8D43A] transition-all duration-300 relative group py-2"
+                  className="text-white hover:text-[#F8D43A] transition-all duration-300 relative group py-2 uppercase tracking-wider text-sm font-light"
                 >
                   <span className="relative z-10">About</span>
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#F8D43A] transition-all duration-300 group-hover:w-full"></span>
+                  <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-[#F8D43A] transition-all duration-300 group-hover:w-full opacity-50"></span>
                 </a>
                 <a 
                   href="#rooms"
@@ -499,10 +499,10 @@ export default function Home() {
                     e.preventDefault();
                     scrollToSection('rooms');
                   }}
-                  className="text-white hover:text-[#F8D43A] transition-all duration-300 relative group py-2"
+                  className="text-white hover:text-[#F8D43A] transition-all duration-300 relative group py-2 uppercase tracking-wider text-sm font-light"
                 >
                   <span className="relative z-10">Rooms</span>
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#F8D43A] transition-all duration-300 group-hover:w-full"></span>
+                  <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-[#F8D43A] transition-all duration-300 group-hover:w-full opacity-50"></span>
                 </a>
                 <a 
                   href="#gallery"
@@ -510,10 +510,10 @@ export default function Home() {
                     e.preventDefault();
                     scrollToSection('gallery');
                   }}
-                  className="text-white hover:text-[#F8D43A] transition-all duration-300 relative group py-2"
+                  className="text-white hover:text-[#F8D43A] transition-all duration-300 relative group py-2 uppercase tracking-wider text-sm font-light"
                 >
                   <span className="relative z-10">Gallery</span>
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#F8D43A] transition-all duration-300 group-hover:w-full"></span>
+                  <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-[#F8D43A] transition-all duration-300 group-hover:w-full opacity-50"></span>
                 </a>
                 <a 
                   href="#offers"
@@ -521,10 +521,10 @@ export default function Home() {
                     e.preventDefault();
                     scrollToSection('offers');
                   }}
-                  className="text-white hover:text-[#F8D43A] transition-all duration-300 relative group py-2"
+                  className="text-white hover:text-[#F8D43A] transition-all duration-300 relative group py-2 uppercase tracking-wider text-sm font-light"
                 >
                   <span className="relative z-10">Offers</span>
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#F8D43A] transition-all duration-300 group-hover:w-full"></span>
+                  <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-[#F8D43A] transition-all duration-300 group-hover:w-full opacity-50"></span>
                 </a>
                 <a 
                   href="#contact"
@@ -532,16 +532,16 @@ export default function Home() {
                     e.preventDefault();
                     scrollToSection('contact');
                   }}
-                  className="text-white hover:text-[#F8D43A] transition-all duration-300 relative group py-2"
+                  className="text-white hover:text-[#F8D43A] transition-all duration-300 relative group py-2 uppercase tracking-wider text-sm font-light"
                 >
                   <span className="relative z-10">Contact</span>
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#F8D43A] transition-all duration-300 group-hover:w-full"></span>
+                  <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-[#F8D43A] transition-all duration-300 group-hover:w-full opacity-50"></span>
                 </a>
-                <button className="bg-[#F8D43A] hover:bg-[#C9A12A] text-black px-6 py-2.5 rounded-full transition-all duration-300 transform hover:scale-105 font-medium flex items-center gap-2 shadow-lg hover:shadow-xl">
+                <button className="ml-4 bg-[#F8D43A]/10 hover:bg-[#F8D43A] text-[#F8D43A] hover:text-black px-6 py-2.5 rounded-full transition-all duration-300 transform hover:scale-105 font-medium flex items-center gap-2 border border-[#F8D43A]/20 hover:border-transparent backdrop-blur-sm">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                   </svg>
-                  Book Now
+                  <span className="uppercase tracking-wider text-sm">Book Now</span>
                 </button>
               </div>
 
@@ -550,7 +550,7 @@ export default function Home() {
                 className="lg:hidden p-2 text-white hover:text-[#F8D43A] transition-all duration-300"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
               >
-                <div className="p-1.5 rounded-full bg-[#F8D43A]/10 hover:bg-[#F8D43A]/20 transition-all">
+                <div className="p-1.5 rounded-full bg-[#F8D43A]/5 hover:bg-[#F8D43A]/10 transition-all">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     {isMenuOpen ? (
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -564,7 +564,7 @@ export default function Home() {
 
             {/* Mobile Menu */}
             {isMenuOpen && (
-              <div className="lg:hidden mt-4 border-t border-white/10 pt-4">
+              <div className="lg:hidden mt-4 pt-4 border-t border-white/10">
                 <div className="flex flex-col space-y-3">
                   <a 
                     href="#about" 
@@ -573,7 +573,7 @@ export default function Home() {
                       scrollToSection('about');
                       setIsMenuOpen(false);
                     }}
-                    className="text-white hover:text-[#F8D43A] transition-all duration-300 px-4 py-2.5 rounded-lg hover:bg-[#F8D43A]/10 flex items-center gap-3"
+                    className="text-white hover:text-[#F8D43A] transition-all duration-300 px-4 py-3 rounded-lg hover:bg-[#F8D43A]/5 flex items-center gap-3 uppercase tracking-wider text-sm font-light"
                   >
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -587,7 +587,7 @@ export default function Home() {
                       scrollToSection('rooms');
                       setIsMenuOpen(false);
                     }}
-                    className="text-white hover:text-[#F8D43A] transition-all duration-300 px-4 py-2.5 rounded-lg hover:bg-[#F8D43A]/10 flex items-center gap-3"
+                    className="text-white hover:text-[#F8D43A] transition-all duration-300 px-4 py-3 rounded-lg hover:bg-[#F8D43A]/5 flex items-center gap-3 uppercase tracking-wider text-sm font-light"
                   >
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
@@ -601,7 +601,7 @@ export default function Home() {
                       scrollToSection('gallery');
                       setIsMenuOpen(false);
                     }}
-                    className="text-white hover:text-[#F8D43A] transition-all duration-300 px-4 py-2.5 rounded-lg hover:bg-[#F8D43A]/10 flex items-center gap-3"
+                    className="text-white hover:text-[#F8D43A] transition-all duration-300 px-4 py-3 rounded-lg hover:bg-[#F8D43A]/5 flex items-center gap-3 uppercase tracking-wider text-sm font-light"
                   >
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -615,7 +615,7 @@ export default function Home() {
                       scrollToSection('offers');
                       setIsMenuOpen(false);
                     }}
-                    className="text-white hover:text-[#F8D43A] transition-all duration-300 px-4 py-2.5 rounded-lg hover:bg-[#F8D43A]/10 flex items-center gap-3"
+                    className="text-white hover:text-[#F8D43A] transition-all duration-300 px-4 py-3 rounded-lg hover:bg-[#F8D43A]/5 flex items-center gap-3 uppercase tracking-wider text-sm font-light"
                   >
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
@@ -629,18 +629,18 @@ export default function Home() {
                       scrollToSection('contact');
                       setIsMenuOpen(false);
                     }}
-                    className="text-white hover:text-[#F8D43A] transition-all duration-300 px-4 py-2.5 rounded-lg hover:bg-[#F8D43A]/10 flex items-center gap-3"
+                    className="text-white hover:text-[#F8D43A] transition-all duration-300 px-4 py-3 rounded-lg hover:bg-[#F8D43A]/5 flex items-center gap-3 uppercase tracking-wider text-sm font-light"
                   >
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
                     Contact
                   </a>
-                  <button className="bg-[#F8D43A] hover:bg-[#C9A12A] text-black px-6 py-3 rounded-full transition-all duration-300 font-medium flex items-center justify-center gap-2 shadow-lg hover:shadow-xl mt-2">
+                  <button className="bg-[#F8D43A]/10 hover:bg-[#F8D43A] text-[#F8D43A] hover:text-black px-6 py-3 rounded-full transition-all duration-300 font-medium flex items-center justify-center gap-2 border border-[#F8D43A]/20 hover:border-transparent backdrop-blur-sm mt-2">
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
-                    Book Now
+                    <span className="uppercase tracking-wider text-sm">Book Now</span>
                   </button>
                 </div>
               </div>
