@@ -3,26 +3,41 @@
 import Image from 'next/image';
 import { Fragment, useEffect, useCallback } from 'react';
 
-interface RoomModalProps {
-  room: {
-    title: string;
-    description: string;
-    price: {
-      lkr: string;
-      usd: string;
+interface Room {
+  title: string;
+  description: string;
+  price: {
+    lkr: {
+      x2?: {
+        romeOnly: string;
+        bedAndBreakfast: string;
+        halfBoard: string;
+        fullBoard: string;
+      };
+      x3?: {
+        romeOnly: string;
+        bedAndBreakfast: string;
+        halfBoard: string;
+        fullBoard: string;
+      };
     };
-    features: string[];
-    image: string;
-    details: {
-      size: string;
-      occupancy: string;
-      bedType: string;
-      view: string;
-      bathroom: string[];
-      amenities: string[];
-      additionalInfo: string[];
-    };
+    extraBed: string;
   };
+  features: string[];
+  image: string;
+  details: {
+    size: string;
+    occupancy: string;
+    bedType: string;
+    view: string;
+    bathroom: string[];
+    amenities: string[];
+    additionalInfo: string[];
+  };
+}
+
+interface RoomModalProps {
+  room: Room;
   isOpen: boolean;
   onClose: () => void;
 }
@@ -95,8 +110,8 @@ export default function RoomModal({ room, isOpen, onClose }: RoomModalProps) {
             {/* Pricing */}
             <div className="mb-6">
               <div className="flex items-center justify-between mb-2">
-                <p className="text-2xl font-bold gold-text-gradient">{room.price.lkr}/night</p>
-                <p className="text-lg text-gray-600">{room.price.usd}/night</p>
+                <p className="text-2xl font-bold gold-text-gradient">{room.price.lkr.x2?.romeOnly}/night</p>
+                <p className="text-lg text-gray-600">{room.price.lkr.x3?.romeOnly}/night</p>
               </div>
               <p className="text-gray-600">{room.description}</p>
             </div>
