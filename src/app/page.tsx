@@ -51,6 +51,87 @@ interface Room {
   };
 }
 
+const HeroSection = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const heroImages = [
+    '/images/hero/hero-1.jpg',
+    '/images/hero/hero-2.jpg',
+    '/images/hero/hero-3.jpg'
+  ];
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % heroImages.length);
+    }, 5000); // Change slide every 5 seconds
+
+    return () => clearInterval(timer);
+  }, []);
+
+  return (
+    <section className="relative h-screen">
+      {/* Logo */}
+      <div className="absolute top-4 left-4 z-20 w-48">
+        <Image
+          src="/images/logo.png"
+          alt="Rajini by The Waters Logo"
+          width={192}
+          height={48}
+          className="w-full h-auto"
+          priority
+        />
+      </div>
+
+      {/* Hero Slider */}
+      <div className="relative h-full">
+        {heroImages.map((image, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 transition-opacity duration-1000 ${
+              currentSlide === index ? 'opacity-100' : 'opacity-0'
+            }`}
+          >
+            <Image
+              src={image}
+              alt={`Rajini by The Waters - Scenic View ${index + 1}`}
+              fill
+              className="object-cover"
+              priority={index === 0}
+            />
+          </div>
+        ))}
+        <div className="absolute inset-0 bg-black/30" /> {/* Overlay */}
+        
+        {/* Hero Content */}
+        <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+            Welcome to Rajini by The Waters
+          </h1>
+          <p className="text-xl md:text-2xl mb-8 max-w-2xl">
+            Experience tranquility and luxury in the heart of Sri Lanka
+          </p>
+          <button className="bg-white text-black px-8 py-3 rounded-full text-lg font-semibold hover:bg-opacity-90 transition-all">
+            Book Now
+          </button>
+        </div>
+
+        {/* Slider Navigation Dots */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex space-x-2">
+          {heroImages.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentSlide(index)}
+              className={`w-3 h-3 rounded-full transition-all ${
+                currentSlide === index ? 'bg-white' : 'bg-white/50'
+              }`}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -508,45 +589,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative h-screen">
-        {heroSlides.map((slide, index) => (
-          <div
-            key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 ${
-              currentSlide === index ? 'opacity-100' : 'opacity-0'
-            }`}
-          >
-            <Image
-              src={slide.image}
-              alt={slide.title}
-              fill
-              className="object-cover"
-              priority={index === 0}
-            />
-            <div className="absolute inset-0 bg-black/60 z-10"></div>
-            <div className="absolute inset-0 z-20 flex items-center justify-center">
-              <div className="text-center px-4 animate-fadeIn">
-                <h1 className="text-5xl md:text-7xl font-bold mb-4 gold-text-gradient">{slide.title}</h1>
-                <p className="text-xl md:text-2xl mb-8 text-white">{slide.subtitle}</p>
-                <button className="btn-primary">Book Now</button>
-              </div>
-            </div>
-          </div>
-        ))}
-
-        {/* Slider Controls */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-30 flex space-x-2">
-          {heroSlides.map((_, index) => (
-            <button
-              key={index}
-              className={`w-3 h-3 rounded-full transition-colors ${
-                currentSlide === index ? 'bg-[#F8D43A]' : 'bg-white/50'
-              }`}
-              onClick={() => setCurrentSlide(index)}
-            />
-          ))}
-        </div>
-      </section>
+      <HeroSection />
 
       {/* About Section */}
       <section id="about" className="py-20 px-4 bg-black text-white">
