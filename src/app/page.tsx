@@ -88,10 +88,10 @@ export default function Home() {
       price: {
         lkr: {
           x2: {
-            romeOnly: "LKR 20,000.00",
-            bedAndBreakfast: "LKR 22,000.00",
-            halfBoard: "LKR 24,000.00",
-            fullBoard: "LKR 26,000.00"
+            romeOnly: "LKR 22,000.00",
+            bedAndBreakfast: "LKR 24,000.00",
+            halfBoard: "LKR 26,000.00",
+            fullBoard: "LKR 28,000.00"
           }
         },
         extraBed: "LKR 4,000.00"
