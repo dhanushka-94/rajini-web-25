@@ -97,7 +97,6 @@ export default function Home() {
         extraBed: "LKR 4,000.00"
       },
       features: [
-        "Welcome Drink",
         "Lake View",
         "AC",
         "TV",
@@ -125,7 +124,6 @@ export default function Home() {
           "24/7 Service"
         ],
         additionalInfo: [
-          "Welcome Drink on Arrival",
           "Extra Bed Available (LKR 4,000)"
         ]
       }
@@ -151,7 +149,6 @@ export default function Home() {
         extraBed: "LKR 4,000.00"
       },
       features: [
-        "Welcome Drink",
         "Lake View",
         "AC",
         "TV",
@@ -179,7 +176,6 @@ export default function Home() {
           "24/7 Service"
         ],
         additionalInfo: [
-          "Welcome Drink on Arrival",
           "Extra Bed Available (LKR 4,000)"
         ]
       }
@@ -205,7 +201,6 @@ export default function Home() {
         extraBed: "LKR 4,000.00"
       },
       features: [
-        "Welcome Drink",
         "Lake View",
         "AC",
         "TV",
@@ -233,7 +228,6 @@ export default function Home() {
           "24/7 Service"
         ],
         additionalInfo: [
-          "Welcome Drink on Arrival",
           "Extra Bed Available (LKR 4,000)"
         ]
       }
