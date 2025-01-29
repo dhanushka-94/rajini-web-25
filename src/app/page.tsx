@@ -758,6 +758,60 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Sports & Activities Section */}
+      <section className="py-20 px-4 bg-gradient-to-br from-black via-gray-900 to-black">
+        <div className="container mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-4 gold-text-gradient">Sports & Activities</h2>
+          <p className="text-center text-white/90 mb-12 max-w-2xl mx-auto">
+            Enhance your stay with our exciting recreational activities
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Air Rifle Shooting */}
+            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-[#F8D43A]/30 transition-all duration-300">
+              <div className="flex items-start gap-4">
+                <div className="bg-[#C9A12A] p-3 rounded-full">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18 5l-7-3-7 3m14 6l-7-3-7 3m14 6l-7-3-7 3M3 7v10M7 17v-10M11 17v-10M15 17v-10M19 17v-10" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-white mb-2">Air Rifle Shooting</h3>
+                  <p className="text-gray-300 mb-4">Test your precision and focus with our professional air rifle shooting range.</p>
+                  <div className="flex items-center gap-2 text-[#F8D43A]">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span>Additional charges apply</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Board Games */}
+            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-[#F8D43A]/30 transition-all duration-300">
+              <div className="flex items-start gap-4">
+                <div className="bg-[#C9A12A] p-3 rounded-full">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-white mb-2">Board Games</h3>
+                  <p className="text-gray-300 mb-4">Enjoy quality time with friends and family with our selection of classic board games.</p>
+                  <div className="flex items-center gap-2 text-[#F8D43A]">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span>Additional charges apply</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Special Offers Section */}
       <section id="offers" className="py-20 px-4 gold-gradient-reverse">
         <div className="container mx-auto">
